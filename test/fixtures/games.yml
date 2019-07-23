@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  points: 1
+  win: 1
+  loss: 1
+  rank: 1
+
+two:
+  points: 1
+  win: 1
+  loss: 1
+  rank: 1
