@@ -32,7 +32,7 @@ Rails.application.configure do
 
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
-  config.action_cable.allowed_request_origins = ['http://localhost:3000']
+  config.action_cable.allowed_request_origins = ['https://dry-savannah-66338.herokuapp.com']
   config.action_mailer.perform_caching = false
   config.action_cable.url = 'wss://tabletopargame.herokuapp.com/cable'
   # config.action_cable.allowed_request_origins = [ 'https://tabletopargame.herokuapp.com' ]
