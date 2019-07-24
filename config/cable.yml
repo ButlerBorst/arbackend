@@ -6,5 +6,5 @@ test:
 
 production:
   adapter: redis
-  url: redis://redistogo:9b85832371d623a01366e70df7259a82@barb.redistogo.com:9846/
+  url: redis://redistogo:9c74a06423341888832ab0725d8402a3@spinyfin.redistogo.com:11737/
   channel_prefix: argamebackend_production
