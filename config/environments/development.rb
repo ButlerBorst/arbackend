@@ -39,7 +39,7 @@ Rails.application.configure do
   config.action_cable.url = 'wss://tabletopargame.herokuapp.com/cable'
   # config.action_cable.url = 'wss://localhost:3001.com/cable'
 
-  # config.action_cable.allowed_request_origins = [ 'https://tabletopargame.herokuapp.com' ]
+  config.action_cable.allowed_request_origins = [ 'https://tabletopargame.herokuapp.com' ]
   config.web_socket_server_url = "wss://tabletopargame.herokuapp.com/cable"
   # config.web_socket_server_url = "wss://localhost:3001.com/cable"
 
