@@ -15,25 +15,26 @@ class GamesController < ApplicationController
   end
 
   # POST /games
+  # def create
+  #   @game = Game.new(game_params)
+  #
+  #   if @game.save
+  #     render json: @game, status: :created, location: @game
+  #   else
+  #     render json: @game.errors, status: :unprocessable_entity
+  #   end
+  # end
+  #
   def create
-    @game = Game.new(game_params)
+  @game = Game.new(game_params)
 
-    if @game.save
-      render json: @game, status: :created, location: @game
-    else
-      render json: @game.errors, status: :unprocessable_entity
-    end
-  end
-#   def create
-#   @game = Game.new(game_params)
-#   @game.user = current_user
-#   if @game.save
-#     render json: {message: 'game has been created', success: true, data: @game}, status:200
-#   else
-#     render json: {message: 'game has not been created', success: false, data: @game.errors}, status:406
-#
-# end
-# end
+  if @game.save
+    render json: {message: 'game has been created', success: true, data: @game}, status:200
+  else
+    render json: {message: 'game has not been created', success: false, data: @game.errors}, status:406
+
+end
+end
 
   # PATCH/PUT /games/1
   def update
@@ -57,6 +58,6 @@ class GamesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def game_params
-      params.permit(:id, :points, :win, :loss, :rank, :opponentsPoints)
+      params.permit(:id)
     end
 end

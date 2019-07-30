@@ -1,3 +1,6 @@
 class GameSerializer < ActiveModel::Serializer
-  attributes :id, :points, :win, :loss, :rank, :opponentsPoints
+  has_many :users
+  attributes :id
+  # this needs to have has_many :users
+  # the only attribute is id
 end
