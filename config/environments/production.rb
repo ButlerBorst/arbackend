@@ -38,7 +38,9 @@ Rails.application.configure do
 
 
   # add the front end deploy url link
-  config.action_cable.allowed_request_origins = [ 'https://battle-ar.herokuapp.com' ]
+  # config.action_cable.allowed_request_origins = [ 'https://battle-ar.herokuapp.com' ]
+  config.action_cable.allowed_request_origins = [ 'http://localhost:3000' ]
+
   config.web_socket_server_url = "wss://tabletopargame.herokuapp.com/cable"
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
