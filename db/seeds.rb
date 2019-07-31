@@ -8,11 +8,11 @@
 
 User.destroy_all
 User.create(username: 'test', password: 'test', points: 0, win: 0, loss: 0)
-b = User.create(username: 'b', password: 'password', points: 0, win: 0,  loss: 0)
-a = User.create(username: 'a', password: 'password', points: 0, win: 0,  loss: 0)
-c = User.create(username: 'c', password: 'password', points: 0, win: 0,  loss: 0)
-d = User.create(username: 'd', password: 'password', points: 0, win: 0,  loss: 0)
-e = User.create(username: 'e', password: 'password', points: 0, win: 0,  loss: 0)
+b = User.create(username: 'b', password: 'password', points: 0, win: 5,  loss: 0)
+a = User.create(username: 'a', password: 'password', points: 0, win: 4,  loss: 0)
+c = User.create(username: 'c', password: 'password', points: 0, win: 3,  loss: 0)
+d = User.create(username: 'd', password: 'password', points: 0, win: 2,  loss: 0)
+e = User.create(username: 'e', password: 'password', points: 0, win: 1,  loss: 0)
 f = User.create(username: 'f', password: 'password', points: 0, win: 0,  loss: 0, game_id: 1)
 g = User.create(username: 'g', password: 'password', points: 0, win: 0,  loss: 0, game_id: 1)
 

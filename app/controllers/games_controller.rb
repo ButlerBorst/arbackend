@@ -4,11 +4,17 @@ class GamesController < ApplicationController
 
   # GET /games
   def index
-    @games = Game.all
-
-    render json: @games
+    results = []
+    User.all.each do |user|
+      results << {
+        username: user.username,
+        win_count: user.win,
+        loss_count: user.loss
+      }
+    end
+    results = results.sort_by{|result| result[:win_count]}.reverse
+    render json: {message: 'leaderboard success', success: true, data: results}, status: 200
   end
-
   # GET /games/1
   def show
     render json: @game
