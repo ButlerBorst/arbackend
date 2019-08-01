@@ -6,9 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-# User.destroy_all
+User.destroy_all
 # User.create(username: 'test', password: 'test', points: 0, win: 0, loss: 0)
-# b = User.create(username: '', password: 'password', points: 0, win: 3,  loss: 0)
+b = User.create(username: "danny champ", password: 'password', points: 0, win: 3,  loss: 0)
 # a = User.create(username: 'a', password: 'password', points: 0, win: 2,  loss: 0)
 # c = User.create(username: 'c', password: 'password', points: 0, win: 2,  loss: 0)
 # d = User.create(username: 'd', password: 'password', points: 0, win: 1,  loss: 0)
@@ -16,8 +16,8 @@
 # f = User.create(username: 'f', password: 'password', points: 0, win: 0,  loss: 0)
 # g = User.create(username: 'g', password: 'password', points: 0, win: 0,  loss: 0)
 #
-# Game.destroy_all
-# Game.create()
+Game.destroy_all
+Game.create()
 #
 # # game: only has an id. Has a has_many association with users
 # # user: has id, username, password_digest, game_id, points, wins, losses
